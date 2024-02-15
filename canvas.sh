@@ -36,8 +36,7 @@
  
     oc new-app quay.io/bamoe/canvas:$VERSION --name=$APP_NAME_BAMOE_CANVAS \
     -e KIE_SANDBOX_EXTENDED_SERVICES_URL=https://$(oc get route $APP_NAME_EXTENDED_SERVICES --output jsonpath={.spec.host}) \
-    -e KIE_SANDBOX_GIT_CORS_PROXY_URL=https://$(oc get route $APP_NAME_GIT_CORS_PROXY --output jsonpath={.spec.host}) \
-    -e 
+    -e KIE_SANDBOX_GIT_CORS_PROXY_URL=https://$(oc get route $APP_NAME_GIT_CORS_PROXY --output jsonpath={.spec.host}) 
  
     oc create route edge --service=$APP_NAME_BAMOE_CANVAS
  
