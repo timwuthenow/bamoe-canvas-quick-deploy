@@ -2,8 +2,8 @@ export APP_PART_OF=bamoe-canvas-app
 export APP_NAME_EXTENDED_SERVICES=bamoe-extended-services
 export APP_NAME_CORS_PROXY=bamoe-cors-proxy
 export APP_NAME_BAMOE_CANVAS=bamoe-canvas
-    export VERSION=9.1.0
-    export TAG=-ibm-0001
+    export VERSION=9.1.1
+    export TAG=-ibm-0003
 
    echo "Deploying Extended Services"
  
